@@ -9,11 +9,12 @@ function searchCountry(){
 	{
 		var countryName = document.getElementById("country").value;
 		var request = new XMLHttpRequest();
+		var result = document.getElementById("result");
 		var url = "https://info-lab7-chrissy97.c9users.io/world.php?country=" + countryName;
 		request.onreadystatechange = function ()
 		{
 			if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-				alert(this.responseText);
+				result.innerHTML = this.responseText;
 			} 
 		};
 		request.open('GET',url);

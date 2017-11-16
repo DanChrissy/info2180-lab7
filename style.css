@@ -1,8 +1,8 @@
 body {
 	margin: auto;
 	position: relative;
-	height: 800px;
-	width: 800px;
+	
+	background-color: lightgray;
 }
 
 h1{
@@ -10,15 +10,14 @@ h1{
 	color: white;
 	padding: 50px;
 	text-align: center;
-	background-color: purple;
+	background-color: crimson;
 	font-family:'Book Antiqua'
 
 }
 
 #controls, #result{
-	background-color: lightgray;
+	padding: 10px;
+	margin: auto;
+	width:500px;
 }
 
-#controls{
-	padding: 10px;
-}

@@ -28,4 +28,4 @@ if ($country){
     foreach ($all_results as $all_row) {
         echo '<li>' . $all_row['name'] . ' is ruled by ' . $all_row['head_of_state'] . '</li>';
     }
-}else{echo "Incorrect parameter";}
+}
